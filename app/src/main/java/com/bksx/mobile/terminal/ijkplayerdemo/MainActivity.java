@@ -2,24 +2,21 @@ package com.bksx.mobile.terminal.ijkplayerdemo;
 
 import android.os.Bundle;
 
-import com.google.android.material.snackbar.Snackbar;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.view.View;
 
-
-import com.bksx.mobile.terminal.ijkplayerdemo.databinding.ActivityMainBinding;
-
-import android.view.Menu;
-import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity {
-
+    private IjkVideoView mVideoPlayerIJK;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        mVideoPlayerIJK = findViewById(R.id.video_view);
+        String videoPath = "http://v-cdn.zjol.com.cn/280443.mp4";
+     //   mVideoPlayerIJK.setVideoPath(videoPath);
+        mVideoPlayerIJK.setPath(videoPath);
+        mVideoPlayerIJK.start();
     }
 }
