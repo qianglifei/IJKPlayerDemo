@@ -5,6 +5,12 @@
       <map>
         <entry key="..\:/AndroidStudioProjects/IJKPlayerDemo/app/src/main/res/layout/activity_main.xml" value="0.33094994892747703" />
         <entry key="..\:/AndroidStudioProjects/IJKPlayerDemo/app/src/main/res/layout/content_main.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/IJKPlayerDemo/player_custom/src/main/res/drawable/retry_bg.xml" value="0.3508682328907048" />
+        <entry key="..\:/AndroidStudioProjects/IJKPlayerDemo/player_custom/src/main/res/layout/activity_main.xml" value="0.3375" />
+        <entry key="..\:/AndroidStudioProjects/IJKPlayerDemo/player_custom/src/main/res/layout/jz_dialog_brightness.xml" value="0.3375" />
+        <entry key="..\:/AndroidStudioProjects/IJKPlayerDemo/player_custom/src/main/res/layout/jz_dialog_progress.xml" value="0.3375" />
+        <entry key="..\:/AndroidStudioProjects/IJKPlayerDemo/player_custom/src/main/res/layout/jz_layout_clarity.xml" value="0.3375" />
+        <entry key="..\:/AndroidStudioProjects/IJKPlayerDemo/player_custom/src/main/res/layout/jz_layout_std.xml" value="0.3375" />
       </map>
     </option>
   </component>

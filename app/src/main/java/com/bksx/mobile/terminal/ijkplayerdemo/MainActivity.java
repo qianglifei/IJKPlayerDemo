@@ -5,18 +5,22 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.bksx.mobile.terminal.player_custom.Jzvd;
+import com.bksx.mobile.terminal.player_custom.JzvdStd;
 
 
 public class MainActivity extends AppCompatActivity {
-    private IjkVideoView mVideoPlayerIJK;
+    JzvdStd jzvdStd;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        mVideoPlayerIJK = findViewById(R.id.video_view);
-        String videoPath = "http://v-cdn.zjol.com.cn/280443.mp4";
-     //   mVideoPlayerIJK.setVideoPath(videoPath);
-        mVideoPlayerIJK.setPath(videoPath);
-        mVideoPlayerIJK.start();
+
+        jzvdStd = findViewById(R.id.video_player);
+        Jzvd.releaseAllVideos();
+        jzvdStd.setUp("http://v-cdn.zjol.com.cn/280443.mp4"
+                , "ghjgh", JzvdStd.SCREEN_NORMAL, MediaIjk.class);
+        jzvdStd.startVideo();
     }
 }
